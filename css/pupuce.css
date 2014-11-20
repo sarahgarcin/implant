@@ -1,0 +1,99 @@
+/* LISTE D'APPLI DASHBOARD */
+
+.list-app {
+	margin-top: 50px;
+}
+
+.list-app ul{
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+
+.list-app li{
+	font-size: 20px;
+	border-top: 1px solid #000;
+	text-transform: uppercase;
+	padding: 20px 10px;
+	list-style: none;
+	float:left;
+  	display:inline;
+  	width:45%;
+  	margin-right: 20px;
+  	cursor: pointer;
+}
+
+
+.app-content li{
+	border: 0;
+	display: none;
+}
+
+.puce-model{
+	margin: auto;
+	margin-top: 100px;
+	width: 80%;
+	height: 300px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.tab-links li {
+    margin:0px 5px;
+    list-style:none;
+}
+
+.tab-links a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    background:#7FB5DA;
+    font-size:16px;
+    font-weight:600;
+    color:#4c4c4c;
+    transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#fff;
+    color:#4c4c4c;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+    padding:15px;
+    border-radius:3px;
+    background:#fff;
+    position: absolute;
+    width: 300px;
+    height:800px;
+    top:0;
+    left:-250px;
+    z-index: -1;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
